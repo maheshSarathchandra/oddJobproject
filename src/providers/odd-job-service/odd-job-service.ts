@@ -19,7 +19,7 @@ export class OddJobServiceProvider {
     console.log('Hello OddJobServiceProvider Provider');
   }
  public getOddJobType():Observable<any> {
-    return this.http.get(this.API+'/good-beers')
+    return this.http.get(this.API+'/jobs')
       .map((res:Response)=> res.json());
   }
 
